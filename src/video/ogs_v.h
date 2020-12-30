@@ -7,6 +7,8 @@ class VideoDriver_OGS : public VideoDriver {
 private:
 	uint ticks; ///< Amount of ticks to run.
 
+	void PollEvent();
+
 public:
 	const char *Start(const char * const *param) override;
 
@@ -21,6 +23,8 @@ public:
 	bool ToggleFullscreen(bool fullscreen) override;
 	const char *GetName() const override { return "null"; }
 	bool HasGUI() const override { return true; }
+
+
 };
 
 /** Factory the null video driver. */
