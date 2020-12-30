@@ -1073,6 +1073,7 @@ pathfinder/yapf/yapf_type.hpp
 # Video
 video/dedicated_v.cpp
 video/null_v.cpp
+video/ogs_v.cpp
 #if DEDICATED
 #else
 #if ALLEGRO

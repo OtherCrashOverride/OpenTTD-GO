@@ -1568,7 +1568,7 @@ make_cflags_and_ldflags() {
 	fi
 
 	if [ "$os" != "CYGWIN" ] && [ "$os" != "HAIKU" ] && [ "$os" != "OPENBSD" ] && [ "$os" != "MINGW" ] && [ "$os" != "MORPHOS" ] && [ "$os" != "OSX" ] && [ "$os" != "DOS" ] && [ "$os" != "WINCE" ] && [ "$os" != "PSP" ] && [ "$os" != "OS2" ]; then
-		LIBS="$LIBS -lpthread"
+		LIBS="$LIBS -lpthread -lgo2"
 	fi
 
 	if [ "$os" != "CYGWIN" ] && [ "$os" != "HAIKU" ] && [ "$os" != "MINGW" ] && [ "$os" != "DOS" ] && [ "$os" != "WINCE" ]; then
